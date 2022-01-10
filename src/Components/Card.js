@@ -12,14 +12,16 @@ const Card = (props) => {
     color: "white",
     position: "relative",
     zIndex: "100",
-    marginRight: "auto",
+    marginRight: "2vw",
     marginTop:"2vh",
-    marginLeft:"auto",
+    marginLeft:"2vw",
+    marginBottom:'2vw',
     cursor: "pointer",
     fontSize: "2em",
     borderRadius: "20px",
     border:"none",
-    backgroundImage: `url(${bgImg})`,
+    backgroundImage: `url(${bgImg}) `,
+    // backgroundImage: '',
     bacgkroundAttachment:"fixed",
     height: "400px",
     width: "300px",
@@ -28,6 +30,7 @@ const Card = (props) => {
     textAlign: "center",
     alignItems: "center",
     justifyContent: "center",
+    zIndex:'1',
   };
 
 

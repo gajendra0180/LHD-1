@@ -66,12 +66,13 @@ const Navbar = (props) => {
           <div className="nav_action_buttons">
             {props.signedIn ? (
               <>
-                <button id="change_it">Welcome &nbsp;&nbsp;{user}</button>
-                {props.Dashboard ? (
+              <a href="/dashboard"><button id="change_it" className="navbtn">Welcome &nbsp;&nbsp;{user}</button></a>
+                
+                {/* {props.Dashboard ? (
                   <>
-                    <button>
-                      <a style={{ color: "white" }} href="/drive">
-                        Drive
+                    <button >
+                      <a style={{ color: "white" ,visibility:'hidden'}} href="/drive">
+                        
                       </a>
                     </button>
                   </>
@@ -83,7 +84,7 @@ const Navbar = (props) => {
                       </a>
                     </button>
                   </>
-                )}
+                )} */}
                 {/* <button ><a style={{ color: "white" }}  onClick={handleLogout}  href="/login">Logout</a></button> */}
               </>
             ) : (
